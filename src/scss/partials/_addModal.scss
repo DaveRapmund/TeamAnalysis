@@ -1,0 +1,51 @@
+@import './mixins.scss';
+
+.modal-container{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1;
+  top: 0;
+  padding: 0 !important;
+}
+
+.add-modal-body{
+  top: 100px;
+  min-width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  background-color: white;
+  position: relative;
+
+  @include mq(991px){
+    border-radius: 0px;
+  }
+}
+
+.add-modal-heading{
+  margin-top: 50px;
+}
+
+.amt-appear, .rmt-appear{
+  opacity: 0;
+}
+
+.amt-appear-active, .rmt-appear-active{
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+
+.amt-exit{
+  opacity: 1;
+}
+
+.amt-exit-active{
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.amt-exit-done{
+  opacity: 0.5;
+  
+}

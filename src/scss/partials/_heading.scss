@@ -1,0 +1,34 @@
+.heading{
+  margin-top: calc(50% - 237px);
+
+  & h2{
+    margin-bottom: 0;
+    text-shadow: 2px 2px 2px $shadow-color;
+  }
+
+  & h5{
+    text-shadow: 2px 2px 2px $shadow-color;
+  }
+}
+
+.heading-row{
+  min-width: 300px;
+}
+
+.tt-appear, .stt-appear{
+  opacity: 0;
+  position: relative;
+  left: -50px;
+}
+
+.tt-appear-active{
+  opacity: 1;
+  left: 0px;
+  transition: left 700ms ease-out, opacity 700ms ease;
+}
+
+.stt-appear-active{
+  opacity: 1;
+  left: 0px;
+  transition: left 700ms ease-out 100ms, opacity 700ms ease 100ms;
+}

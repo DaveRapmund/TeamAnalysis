@@ -1,0 +1,26 @@
+@import './mixins.scss';
+
+.result-modal-body{
+  top: 100px;
+  height: 300px;
+  border-radius: 7px;
+  background-color: white;
+  position: relative;
+
+  @include mq(465px){
+    height: 400px;
+  }
+}
+
+.result-modal-text{
+  min-width: 300px;
+}
+
+.result-modal-heading{
+  margin-top: 20px;
+  min-width: 300px;
+}
+
+.result-modal-button{
+  min-width: 300px;
+}
